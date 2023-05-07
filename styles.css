@@ -1,0 +1,16 @@
+.navbar {
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    height: 50px;
+    position: sticky;
+    top: 0;
+}
+.abc {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+}
