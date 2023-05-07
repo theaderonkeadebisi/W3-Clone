@@ -1,16 +1,29 @@
-.navbar {
-    background-color: black;
-    color: #ffffff;
-    display: flex;
-    height: 50px;
-    position: sticky;
-    top: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.abc {
+body {
+    background-image: url("/static/Assets/nav.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar {
+    background-color: rgba(7, 14, 12, 0.5);
+    max-width: 100%;
+}
+.options ul {
+    display: inline-flex;
     list-style: none;
 }
-li {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 11px;
+.options ul li {
+    float: left;
+}
+.options ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px 7px;
+    clear: both;
 }
