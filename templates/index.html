@@ -30,7 +30,18 @@
                     <li><a href="#">JQUERY</a></li>
                 </ul>
                 <ul class="otheroptions">
-                    <li><a href="#"><i class="fa-sharp fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></a></li>
+                    <li class="drop"><a href="#"><i class="fa-sharp fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></a>
+                      <!-- <div class="dropdown">
+                        <label class="dropbox">
+                          <input type="checkbox" checked="checked">
+                          Dark Mode
+                        </label>
+                        <label class="dropbox">
+                          <input type="checkbox" checked="checked">
+                          Light Mode
+                        </label>
+                      </div> -->
+                    </li>
                     <li><a href="#"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
                 </ul>
@@ -71,46 +82,42 @@
                 </ul>
             </div>
             <div class="maincontent">
-                <div>
+                <div class="galdiv">
                   <div class="gallery">
-                    <a target="_blank" href="/static/Assets/pexels-ash-376464 (1).jpg">
-                      <img src="/static/Assets/pexels-ash-376464 (1).jpg" alt="pancakeimg" width="500" height="600">
+                    <a target="_blank" href="#">
+                      <img src="/static/Assets/pexels-ash-376464 (1).jpg" alt="pancakeimg" />
                     </a>
-                    <div class="desc">Pancakes</div>
                   </div>
                   
                   <div class="gallery">
-                    <a target="_blank" href="/static/Assets/pexels-jan-n-g-u-y-e-n-🍁-2664216.jpg">
-                      <img src="/static/Assets/pexels-jan-n-g-u-y-e-n-🍁-2664216.jpg" alt="pasta" width="500" height="600">
+                    <a target="_blank" href="#">
+                      <img src="/static/Assets/pexels-ella-olsson-1640772.jpg" alt="pasta" />
                     </a>
-                    <div class="desc">Pasta</div>
                   </div>
                   
                   <div class="gallery">
-                    <a target="_blank" href="/static/Assets/pexels-jane-doan-1099680.jpg">
-                      <img src="/static/Assets/pexels-jane-doan-1099680.jpg" alt="smoothie" width="500" height="600">
+                    <a target="_blank" href="#">
+                      <img src="/static/Assets/pexels-jane-doan-1099680.jpg" alt="smoothie"/>
                     </a>
-                    <div class="desc">Smoothie</div>
                   </div>
                   
                   <div class="gallery">
-                    <a target="_blank" href="/static/Assets/pexels-tranmautritam-61180.jpg">
-                      <img src="/static/Assets/pexels-tranmautritam-61180.jpg" alt="Mountains" width="500" height="600">
+                    <a target="_blank" href="#">
+                      <img src="/static/Assets/pexels-tranmautritam-61180.jpg" alt="Mountains" />
                     </a>
-                    <div class="desc">Salad</div>
                   </div>
                 </div>
-                <div>
+                <div class="data">
                     <form action="/action_page.php">
-                      <label for="fname">First Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="fname">First Name</label><br />
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br />
                   
-                      <label for="lname">Last Name</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="lname">Last Name</label><br>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br />
                   
-                      <textarea>Give your feedback...</textarea>
+                      <textarea>Give your feedback...</textarea><br />
                     
-                      <input type="submit" value="Submit">
+                      <input type="submit" value="Submit" style="color: #ffffff; width: 50%; background-color: black;">
                     </form>
                 </div>                  
             </div>
