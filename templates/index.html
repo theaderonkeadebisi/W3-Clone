@@ -8,9 +8,10 @@
     <title>W3Clone</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
     <script src="https://kit.fontawesome.com/a64a40a2cc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <main>
+    <main class="main-section">
         <div>
             <div class="navbar">
                 <ul class="options">
@@ -43,12 +44,14 @@
                                 </div>
                             </div>
                     </li>
-                    <li><a href="#"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#" id="dropbtn"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i></a></li>
                     <li>
-                        <a class="search-icon"> <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
-                        <form>
-                            <input type="text" placeholder="Search W3Clone" name="search">
-                        </form>
+                        <a class="search-icon" id="dropbtn"> <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+                        <div class="hidden-search-input">
+                            <form>
+                                <input type="text" placeholder="Search W3Clone" name="search">
+                            </form>
+                        </div>
                     </li>
                 </ul>
             </div>  
@@ -129,6 +132,7 @@
             </div>
         </div>
                     
-    </main>    
+    </main>
+<script src="/static/scripts/script.js"></script>
 </body>
 </html>
