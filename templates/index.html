@@ -29,22 +29,23 @@
                     <li><a href="#">REACT</a></li>
                     <li><a href="#">JQUERY</a></li>
                 </ul>
-                <ul class="otheroptions">
-                    <li class="drop"><a href="#"><i class="fa-sharp fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></a>
-                      <!-- <div class="dropdown">
-                        <label class="dropbox">
-                          <input type="checkbox" checked="checked">
-                          Dark Mode
-                        </label>
-                        <label class="dropbox">
-                          <input type="checkbox" checked="checked">
-                          Light Mode
-                        </label>
-                      </div> -->
-                    </li>
-                    <li><a href="#"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
-                </ul>
+                <div class="behave">
+                  <div class="dropdown">
+                    <span><i class="fa-sharp fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></span>
+                    <div class="dropdown-content">
+                      <input type="checkbox" id="mode1" name="mode1" value="mode1">
+                      <label for="mode1">Dark Mode</label><br />
+                      <input type="checkbox" id="mode2" name="mode2" value="mode2">
+                      <label for="mode2">Dark Mode</label>
+                    </div>
+                  </div>
+                  <div class="tooltip"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i>
+                    <span class="tooltiptext">Translate w3school</span>
+                  </div>
+                  <div class="searchbar">
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                  </div>
+                </div>
             </div>  
         </div>
         <div>
@@ -81,47 +82,28 @@
                     <li><a href="#">CSS Combinators</a></li>
                 </ul>
             </div>
-            <div class="maincontent">
-                <div class="galdiv">
-                  <div class="gallery">
-                    <a target="_blank" href="#">
-                      <img src="/static/Assets/pexels-ash-376464 (1).jpg" alt="pancakeimg" />
-                    </a>
-                  </div>
-                  
-                  <div class="gallery">
-                    <a target="_blank" href="#">
-                      <img src="/static/Assets/pexels-ella-olsson-1640772.jpg" alt="pasta" />
-                    </a>
-                  </div>
-                  
-                  <div class="gallery">
-                    <a target="_blank" href="#">
-                      <img src="/static/Assets/pexels-jane-doan-1099680.jpg" alt="smoothie"/>
-                    </a>
-                  </div>
-                  
-                  <div class="gallery">
-                    <a target="_blank" href="#">
-                      <img src="/static/Assets/pexels-tranmautritam-61180.jpg" alt="Mountains" />
-                    </a>
-                  </div>
+            <!-- Advertisement -->
+            <section>
+              <div class="maincontent">
+                <div class="adicon">
+                  <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                  <i class="fa-sharp fa-solid fa-xmark" style="color: #5bc1c2;"></i>
                 </div>
-                <div class="data">
-                    <form action="/action_page.php">
-                      <label for="fname">First Name</label><br />
-                      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br />
-                  
-                      <label for="lname">Last Name</label><br>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br />
-                  
-                      <textarea>Give your feedback...</textarea><br />
-                    
-                      <input type="submit" value="Submit" style="color: #ffffff; width: 50%; background-color: black;">
-                    </form>
-                </div>                  
-            </div>
+                <p class="adtext">Microsoft<br /><span class="adbig">Add the extension</span></p>
+                <button>Install</button>                
+              </div>
+              <div class="second">
+                <span class="adtext2">CERELAC junior is rich in vitamins and minerals for your kids after 3 years old</span>
+                <button style="background-color: rgb(226, 110, 110);">Buy Now</button>
+                <img src="/static/Assets/pexels-tranmautritam-61180.jpg">
+                <div class="adicon2">
+                  <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                </div>
+              </div>
+            </section>
         </div>
+
+        
                     
     </main>    
 </body>
