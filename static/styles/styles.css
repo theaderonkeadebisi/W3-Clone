@@ -111,17 +111,13 @@ body {
 }
 /* Advert Section */
 .maincontent {
-    margin-left: 30%;
-    padding: 30px 16px;
-}
-
-div .gallery {
-    margin: 8px;
-    border: 2px solid #ccc;
-    display: inline-flex;
-  }
-  
-  div.gallery:hover {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 700px;
+    height: 90px;
     border: 1px solid #777;
     margin-right: auto;
     margin-left: auto;
@@ -133,41 +129,41 @@ div .gallery {
     position: absolute;
     bottom: 0;
     background-color: #777;
-  }
-  
-  div.gallery img {
-    height: 200px;
-    width: 160px;
-  }
-  
-.data {
-    margin: 50px;
-    background-color: rgba(100, 105, 103, 0.4);
+}
+.adtext {
+    display: block;
+    margin-left: 20px;
+    color: #1c1b1b;
+}
+.adtext:hover {
+    color: rgba(48, 48, 48, 0.5);
+}
+.adbig {
+    font-weight: bold;
+    font-size: 30px;
+}
+button {
+    margin: 20px;
+    height: 40px;
+    width: 200px;
+    background-color: #418bf9;
     color: #ffffff;
-    width: 70%;
-    height: 300px;
+    font-size: 22px;
+    border: none;
+    border-radius: 3px;
 }
 button:hover {
     background-color: rgba(77, 121, 241, 0.7);
 }
-input {
-    width: 100%;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-width: 0;
-    margin: 3px 0;
-    padding-left: 3px;
-    border-radius: 2px;
+img {
+    width: 700px;
+    height: 90px;
 }
-textarea {
-    margin: 10px 0;
-    height: 100px;
-    width: 80%;
-    background-color: rgba(100, 105, 103, 0.8);
-    color: #ffffff;
-    padding: 5px;
+.adicon2 {
+    position: absolute;
+    top: 0;
 }
-/* .drop {
+.second {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -179,10 +175,24 @@ textarea {
     border: 1px solid #777;
     margin-right: auto;
     margin-left: auto;
+    top:50%;
 }
 .adtext2 {
     margin-left: 20px;
 }
-.dropdown label:hover {
-    background-color: rgba(100, 105, 103, 0.4);
-} */
+.house {
+    position: relative;
+}
+.move {
+    position: absolute;
+    top:0;
+    right: 290px;
+    visibility: hidden;
+    animation-name: wrap;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+@keyframes wrap {
+    50% {visibility: visible;}
+    100% {display: none;}
+}
