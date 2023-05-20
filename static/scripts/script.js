@@ -16,9 +16,8 @@ $(document).ready(function() {
                         .css('max-width', '0')
                         .css('display', 'none')
                         .css('transform', 'translateX(0)');
-    
+
     }
     }
     );
 });
-        

@@ -8,6 +8,7 @@
     <title>W3Clone</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
     <script src="https://kit.fontawesome.com/a64a40a2cc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <main>
@@ -29,29 +30,40 @@
                     <li><a href="#">REACT</a></li>
                     <li><a href="#">JQUERY</a></li>
                 </ul>
-                <div class="behave">
-                  <div class="dropdown">
-                    <span><i class="fa-sharp fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></span>
-                    <div class="dropdown-content">
-                      <input type="checkbox" id="mode1" name="mode1" value="mode1">
-                      <label for="mode1">Dark Mode</label><br />
-                      <input type="checkbox" id="mode2" name="mode2" value="mode2">
-                      <label for="mode2">Dark Mode</label>
-                    </div>
-                  </div>
-                  <div class="tooltip"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i>
-                    <span class="tooltiptext">Translate w3school</span>
-                  </div>
-                  <div class="searchbar">
-                    <span><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
-                  </div>
-                </div>
-            </div>  
+                <ul class="otheroptions">
+                    <li class="dropdown">
+                        <a href="#" id="dropbtn"><i class="fa-sharp fa-solid fa-circle-half-stroke" style="color: #ffffff;"></i></a>
+                        <div class="dropdown-content">
+                            <div class="color-mode">
+                                <input type="checkbox" name="example" value="1">
+                                <label>Dark mode</label>
+                            </div>
+                            <div class="color-mode">
+                                <input type="checkbox" name="example" value="2">
+                                <label>Dark code </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tooltip">
+                        <a href="#"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i></a>
+                        <span class="tooltiptext">Translate w3school</span>
+                    </li>
+                    <li>
+                        <a class="search-icon" id="dropbtn"> <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+                        <div class="hidden-search-input">
+                            <form>
+                                <input type="text" placeholder="Search W3Clone" name="search">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <!-- Side bar -->
         <div>
             <div>
                 <ul class="sidebar">
-                    <li><a href="#">CSS Tutorial</a></li>
+                    <li><h2 style="margin-left: 16px; margin-bottom: 10px; font-size: 20px;">CSS Tutorial</h2></li>
                     <li><a href="#">CSS HOME</a></li>
                     <li><a href="#">CSS Introduction</a></li>
                     <li><a href="#">CSS Syntax</a></li>
@@ -84,33 +96,29 @@
             </div>
             <!-- Advertisement -->
             <section>
-              <div class="house">
-                <div class="maincontent">
-                  <div class="adicon">
-                    <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
-                    <i class="fa-sharp fa-solid fa-xmark" style="color: #5bc1c2;"></i>
-                  </div>
-                  <p class="adtext">Microsoft<br /><span class="adbig">Add the extension</span></p>
-                  <button>Install</button>                
-                </div>
-                <div class="move">
-                  <div class="second">
-                    <span class="adtext2">CERELAC junior is rich in vitamins and minerals for your kids after 3 years old</span>
-                    <button style="background-color: rgb(226, 110, 110);">Buy Now</button>
-                    <img src="/static/Assets/pexels-tranmautritam-61180.jpg">
-                    <div class="adicon2">
-                      <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                <div class="house">
+                    <div class="maincontent">
+                        <div class="adicon">
+                            <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                            <i class="fa-sharp fa-solid fa-xmark" style="color: #5bc1c2;"></i>
+                        </div>
+                        <p class="adtext">Microsoft<br /><span class="adbig">Add the extension</span></p>
+                        <button>Install</button>                
                     </div>
-                  </div>
+                    <div class="move">
+                        <div class="second">
+                            <span class="adtext2">CERELAC junior is rich in vitamins and minerals for your kids after 3 years old</span>
+                            <button style="background-color: rgb(226, 110, 110);">Buy Now</button>
+                            <img src="/static/Assets/pexels-tranmautritam-61180.jpg">
+                            <div class="adicon2">
+                                <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-              </div>
-              
             </section>
         </div>
-
-        
-                    
-    </main>    
+    </main>
+    <script src="/static/scripts/script.js"></script>
 </body>
 </html>
