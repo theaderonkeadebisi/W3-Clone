@@ -20,4 +20,9 @@ $(document).ready(function() {
     }
     }
     );
+    var editor = CodeMirror.fromTextArea($("#code-editor")[0], {
+    lineNumbers: true,
+    mode: "css",
+    theme: "default"
+    });
 });

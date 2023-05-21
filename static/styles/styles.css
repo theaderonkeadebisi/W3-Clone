@@ -10,14 +10,23 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+/*.side-nav {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    overflow: scroll;
+
+}*/
 .navbar {
-    background-color: rgba(7, 14, 12, 0.5);
+    background-color: rgba(7, 14, 12, 1.0);
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #777;
+    position: fixed;
 }
 .options {
     display: flex;
@@ -84,11 +93,14 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 17%;
+    top: 50px;
+    float: left;
     background-color: #dbdada;
     position: fixed;
+    width: 20%;
     height: 100%;
-    overflow: auto;
+    border: 3px solid green;
+    overflow: scroll;
 }
 .sidebar li a {
     display: block;
@@ -212,6 +224,7 @@ img {
 .dropdown {
   position: relative;
   display: inline-block;
+  border: 3px solid red;
 }
 .dropdown-content {
   display: none;
@@ -312,3 +325,197 @@ input[name="search"] {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.title-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight: 300;
+    border: 2px solid red;
+}
+
+.column {
+    position: relative;
+    display: inline-block;
+    /*flex-direction: column;*/
+    /*justify-content: flex-start;
+    align-items: center; */
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.directional-btn {
+    border: 2px solid red;
+    margin: 5px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.prev-btn {
+    border-radius: 5px;
+    background-color: rgba(0, 150, 0, 0.7);
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90px;
+    height: 50px;
+}
+.next-btn {
+    border-radius: 5px;
+    background-color: rgba(0, 150, 0, 0.7);
+    display: block;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90px;
+    height: 50px;
+}
+
+.try-btn:hover, .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 150, 0, 1.0);
+    border: 2px solid #39FF14;
+}
+
+/* row class divdes the page into 3 columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+
+} 
+.row {
+    border: 3px solid red;
+    height: 100%;
+    padding: 0;
+
+}
+
+/* first column houses the side nav bar */
+.left-column {
+  float: left;
+  margin: 0;
+  width: 20%;
+  border: 3px solid red;
+}
+
+/* middle column houses the main content */
+.middle-column {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  width: 60%;
+  border: 3px solid red;
+}
+
+/* right column houses the right content reserved to dipict ads */
+.right-column {
+  float: right;
+  margin: 0;
+  width: 20%;
+  border: 3px solid red;
+}
+
+/* footer class houses the footer content */
+.footer {
+display: block;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.description-txt {
+    background-color: rgba(0, 100, 0, 0.5);
+    margin-top: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 18px;
+    font-family:"Segoe UI",Arial,sans-serif;
+    line-height: 1.5;
+}
+
+.try-btn {
+    border-radius: 5px;
+    background-color: rgba(0, 150, 0, 0.7);
+    display: block;
+    margin: 5px;
+    font-size: 20px;
+    width: 30%;
+    height: 50px;
+}
+
+.learn-css-btn {
+    margin-top: 20px;
+}
+
+.code-section {
+    background-color: rgba(128, 128, 128, 1);
+    margin-top: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+}
+
+/*#code-editor {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    width: 100%;
+    height: 80%;
+    border: 2px solid red;
+} */
+
+/* Styling for the code editor container */
+.CodeMirror {
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+/* Styling for line numbers */
+.CodeMirror .CodeMirror-linenumber {
+  color: #999;
+}
+
+/* Styling for the code itself */
+.CodeMirror .CodeMirror-line {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styling for selected text */
+.CodeMirror .CodeMirror-selected {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for cursor */
+.CodeMirror .CodeMirror-cursor {
+  border-left: 2px solid #333;
+}
+
+/* Styling for syntax highlighting */
+.CodeMirror .cm-keyword {
+  color: #00a;
+}
+
+/* Add more custom styles as needed */
+.middle-column-content {
+}
+

@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
     <title>W3Clone</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
     <script src="https://kit.fontawesome.com/a64a40a2cc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/css/css.min.js"></script>
 </head>
 <body>
-    <main>
-        <div>
-            <div class="navbar">
+     <main>
+        <div class="container">
+            <nav class="navbar">
                 <ul class="options">
                     <li><a href="#"><iconify-icon icon="material-symbols:home" height="30" style="color: #ffffff;"></iconify-icon></a></li>
                     <li><a href="#">HTML</a></li>
@@ -57,68 +60,119 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
         <!-- Side bar -->
-        <div>
-            <div>
-                <ul class="sidebar">
-                    <li><h2 style="margin-left: 16px; margin-bottom: 10px; font-size: 20px;">CSS Tutorial</h2></li>
-                    <li><a href="#">CSS HOME</a></li>
-                    <li><a href="#">CSS Introduction</a></li>
-                    <li><a href="#">CSS Syntax</a></li>
-                    <li><a href="#">CSS Selectors</a></li>
-                    <li><a href="#">CSS How To</a></li>
-                    <li><a href="#">CSS Comments</a></li>
-                    <li><a href="#">CSS Colors</a></li>
-                    <li><a href="#">CSS Backgrounds</a></li>
-                    <li><a href="#">CSS Borders</a></li>
-                    <li><a href="#">CSS Margins</a></li>
-                    <li><a href="#">CSS Paddings</a></li>
-                    <li><a href="#">CSS Height/Width</a></li>
-                    <li><a href="#">CSS Box Model</a></li>
-                    <li><a href="#">CSS Outline</a></li>
-                    <li><a href="#">CSS Text</a></li>
-                    <li><a href="#">CSS Fonts</a></li>
-                    <li><a href="#">CSS Icons</a></li>
-                    <li><a href="#">CSS Links</a></li>
-                    <li><a href="#">CSS Tables</a></li>
-                    <li><a href="#">CSS Display</a></li>
-                    <li><a href="#">CSS Max-Width</a></li>
-                    <li><a href="#">CSS Position</a></li>
-                    <li><a href="#">CSS Z-index</a></li>
-                    <li><a href="#">CSS Overflow</a></li>
-                    <li><a href="#">CSS Float</a></li>
-                    <li><a href="#">CSS Inline-block</a></li>
-                    <li><a href="#">CSS Align</a></li>
-                    <li><a href="#">CSS Combinators</a></li>
-                </ul>
+        <div class="row">
+            <div class="left-column">
+                <nav class="sidebar">
+                    <ul>
+                        <h2 style="margin-left: 16px; margin-bottom: 10px; font-size: 20px;">CSS Tutorial</h2>
+                        <li><a href="#">CSS HOME</a></li>
+                        <li><a href="#">CSS Introduction</a></li>
+                        <li><a href="#">CSS Syntax</a></li>
+                        <li><a href="#">CSS Selectors</a></li>
+                        <li><a href="#">CSS How To</a></li>
+                        <li><a href="#">CSS Comments</a></li>
+                        <li><a href="#">CSS Colors</a></li>
+                        <li><a href="#">CSS Backgrounds</a></li>
+                        <li><a href="#">CSS Borders</a></li>
+                        <li><a href="#">CSS Margins</a></li>
+                        <li><a href="#">CSS Paddings</a></li>
+                        <li><a href="#">CSS Height/Width</a></li>
+                        <li><a href="#">CSS Box Model</a></li>
+                        <li><a href="#">CSS Outline</a></li>
+                        <li><a href="#">CSS Text</a></li>
+                        <li><a href="#">CSS Fonts</a></li>
+                        <li><a href="#">CSS Icons</a></li>
+                        <li><a href="#">CSS Links</a></li>
+                        <li><a href="#">CSS Tables</a></li>
+                        <li><a href="#">CSS Display</a></li>
+                        <li><a href="#">CSS Max-Width</a></li>
+                        <li><a href="#">CSS Position</a></li>
+                        <li><a href="#">CSS Z-index</a></li>
+                        <li><a href="#">CSS Overflow</a></li>
+                        <li><a href="#">CSS Float</a></li>
+                        <li><a href="#">CSS Inline-block</a></li>
+                        <li><a href="#">CSS Align</a></li>
+                        <li><a href="#">CSS Combinators</a></li>
+                    </ul>
+                </nav>
             </div>
             <!-- Advertisement -->
-            <section>
-                <div class="house">
-                    <div class="maincontent">
-                        <div class="adicon">
-                            <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
-                            <i class="fa-sharp fa-solid fa-xmark" style="color: #5bc1c2;"></i>
-                        </div>
-                        <p class="adtext">Microsoft<br /><span class="adbig">Add the extension</span></p>
-                        <button>Install</button>                
-                    </div>
-                    <div class="move">
-                        <div class="second">
-                            <span class="adtext2">CERELAC junior is rich in vitamins and minerals for your kids after 3 years old</span>
-                            <button style="background-color: rgb(226, 110, 110);">Buy Now</button>
-                            <img src="/static/Assets/pexels-tranmautritam-61180.jpg">
-                            <div class="adicon2">
+            <div class="middle-column">
+                <div class="middle-column-content">
+                    <div class="house">
+                        <div class="maincontent">
+                            <div class="adicon">
                                 <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                                <i class="fa-sharp fa-solid fa-xmark" style="color: #5bc1c2;"></i>
+                            </div>
+                            <p class="adtext">Microsoft<br /><span class="adbig">Add the extension</span></p>
+                            <button>Install</button>                
+                        </div>
+                        <div class="move">
+                            <div class="second">
+                                <span class="adtext2">CERELAC junior is rich in vitamins and minerals for your kids after 3 years old</span>
+                                <button style="background-color: rgb(226, 110, 110);">Buy Now</button>
+                                <img src="/static/Assets/pexels-tranmautritam-61180.jpg">
+                                <div class="adicon2">
+                                    <i class="fa-regular fa-circle-info" style="color: #5bc1c2;"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
+                <!-- main page body -->
+                    <div class="column">
+                        <div class="title-header">
+                            <h1>CSS Tutorial</h1>
+                        </div>
+                        <div class="directional-btn">
+                            <button class="prev-btn"><i class="fa-solid fa-caret-left"></i>Home</button>
+                            <button class="next-btn">Next<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                        <div class="description-txt">
+                            <p id="txt">CSS is the language we use to style an HTML document.</p>
+                            <p id="txt">CSS describes how HTML elements should be displayed.</p>
+                            <p id="txt">This tutorial will teach you CSS from basic to advanced.</p>
+                            <div class="learn-css-btn">
+                                <button class="try-btn"><i class="fa-solid fa-play"></i> Start learning CSS now</button>
+                            </div>
+                        </div>
+                    </div>
+                <!-- CSS Introduction -->
+                    <div class="first-code-section">
+                        <div class="title-header">
+                            <h1>Examples In Each Chapter</h1>
+                        </div>
+                        <div class="description-txt" style="background-color: transparent;">
+                            <p id="txt">This CSS tutorial contains hundreds of CSS examples.</p>
+                            <p id="txt">With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+                        </div>
+                        <div class="code-section">
+                            <h2>CSS Example</h2>
+                            <textarea id="code-editor"></textarea>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        <!-- Right side bar -->
+            <div class="right-column">
+                <div class="right-sidebar">
+                    <div class="right-sidebar-title">
+                        <h2 style="color: #fff;">Try it Yourself</h2>
+                    </div>
+                    <div class="right-sidebar-content">
+                        <p style="color: #fff;">With our "Try it Yourself" editor, you can edit the source code and view the result.</p>
+                        <button><i class="fa-solid fa-play"></i>Try it yourself</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="/static/scripts/script.js"></script>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
 </body>
 </html>
